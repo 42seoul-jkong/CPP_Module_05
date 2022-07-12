@@ -20,7 +20,7 @@ public:
     Form(const std::string& name, Bureaucrat::grade_t reqSignGrade, Bureaucrat::grade_t reqExecGrade);
     Form(const Form& that);
     Form& operator=(const Form& that);
-    ~Form();
+    virtual ~Form();
     const std::string& getName() const;
     bool isSignatured() const;
     Bureaucrat::grade_t getReqSignGrade() const;
