@@ -73,6 +73,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 void ShrubberyCreationForm::executeInternal() const
 {
     std::cout << " * A tree has been planted on " << this->target << ". * " << std::endl;
-    std::ofstream ofs(this->target + "_shrubbery", std::ios::out | std::ios::app);
+    std::string fn = this->target + "_shrubbery";
+    std::ofstream ofs(fn.c_str(), std::ios::out | std::ios::app);
     ofs << ASCII_ART_TREE << std::endl;
 }
