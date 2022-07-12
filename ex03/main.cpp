@@ -18,7 +18,7 @@ int main()
     Form* form_sc = chief_of_staff.makeForm("shrubbery creation", "home");
     Form* form_rr = chief_of_staff.makeForm("robotomy request", "Seoul");
     Form* form_pp = chief_of_staff.makeForm("presidential pardon", "Rhee");
-    (void)chief_of_staff.makeForm("unknown", "Target Name");
+    Form* form_unk = chief_of_staff.makeForm("unknown", "Target Name");
 
     form_sc->beSigned(president);
     form_sc->execute(president);
@@ -28,6 +28,11 @@ int main()
 
     form_pp->beSigned(president);
     form_pp->execute(president);
+
+    delete form_sc;
+    delete form_rr;
+    delete form_pp;
+    delete form_unk;
 
     return 0;
 }
