@@ -32,7 +32,7 @@ public:
     void signForm(Form& form) const;
 
 private:
-    Bureaucrat() {} // = delete
+    Bureaucrat(); // = delete
 
 public:
     class GradeTooHighException : public std::exception

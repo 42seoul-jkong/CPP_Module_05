@@ -29,7 +29,7 @@ public:
     void execute(const Bureaucrat& bureaucrat) const;
 
 protected:
-    virtual void executeInternal() const {}
+    virtual void executeInternal() const;
 
 protected:
     Form(); // = delete

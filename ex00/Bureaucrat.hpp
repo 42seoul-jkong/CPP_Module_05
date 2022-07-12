@@ -29,7 +29,7 @@ public:
     void demote();
 
 private:
-    Bureaucrat() {} // = delete
+    Bureaucrat(); // = delete
 
 public:
     class GradeTooHighException : public std::exception

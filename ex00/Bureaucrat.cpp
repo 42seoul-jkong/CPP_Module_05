@@ -4,6 +4,8 @@
 #include "Bureaucrat.hpp"
 #include <iostream>
 
+Bureaucrat::Bureaucrat() {} // = delete
+
 Bureaucrat::Bureaucrat(const std::string& name, Bureaucrat::grade_t grade)
     : name(name), grade(grade)
 {

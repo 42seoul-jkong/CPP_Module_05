@@ -105,6 +105,8 @@ void Form::execute(const Bureaucrat& bureaucrat) const
     this->executeInternal();
 }
 
+void Form::executeInternal() const {} // = empty
+
 Form::GradeTooHighException::GradeTooHighException(bool signOrExec) throw()
     : signOrExec(signOrExec) {}
 
