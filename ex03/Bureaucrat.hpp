@@ -13,8 +13,8 @@ class Bureaucrat
 {
 public:
     typedef int grade_t;
-    static const int higest_grade = 1;
-    static const int lowest_grade = 150;
+    static const grade_t higest_grade = 1;
+    static const grade_t lowest_grade = 150;
 
 private:
     const std::string name;
